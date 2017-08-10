@@ -1,0 +1,41 @@
+{
+    "name": "cordova-plugin-save-mediafile",
+    "version": "1.0.0",
+    "cordova": {
+        "id": "cordova-plugin-save-mediafile",
+        "platforms": [
+            "ios",
+            "android"
+        ]
+    },
+    "description": "This plugin allows you to save a media file to the iOS Photo Library or Android Gallery.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/arthur-tam/cordova-plugin-save-mediafile"
+    },
+    "issue": "https://github.com/arthur-tam/cordova-plugin-save-mediafile/issues",
+    "keywords": [
+        "image",
+        "video",
+        "photo library",
+        "camera roll",
+        "ionic",
+        "cordova",
+        "ecosystem:cordova",
+        "cordova-ios",
+        "cordova-android"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=3.0.0"
+        }
+    ],
+    "author": {
+        "name": "Mooee Company Ltd.",
+        "email": "arthur.tam@mooee.com",
+        "url": "http://www.mooee.com"
+    },
+    "license": "MIT",
+    "homepage": "https://github.com/arthur-tam/cordova-plugin-save-mediafile#readme"
+}
