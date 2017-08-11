@@ -1,7 +1,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="cordova-plugin-save-mediafile"
-        version="1.0.0">
+        version="1.0.1">
 
     <name>SaveMediaFile</name>
     <description>This plugin allows you to save a media file to the iOS Camera roll / Photo Library or Android Gallery.</description>
@@ -15,7 +15,7 @@
         <engine name="cordova" version=">=3.0.0"/>
     </engines>
 
-    <dependency id="cordova-plugin-compat" version="^1.0.0" />
+    <dependency id="cordova-plugin-compat" version="^1.0.1" />
 
     <js-module src="www/SaveMediaFile.js" name="SaveMediaFile">
         <clobbers target="cordova.plugins.mediafilesaver"/>
@@ -46,11 +46,6 @@
 
         <header-file src="src/ios/SaveMediaFile.h"/>
         <source-file src="src/ios/SaveMediaFile.m" compiler-flags="-fno-objc-arc"/>
-
-        <preference name="CAMERA_USAGE_DESCRIPTION" default=" " />
-        <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
-            <string>$CAMERA_USAGE_DESCRIPTION</string>
-        </config-file>
 
         <preference name="PHOTOLIBRARY_USAGE_DESCRIPTION" default=" " />
         <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
