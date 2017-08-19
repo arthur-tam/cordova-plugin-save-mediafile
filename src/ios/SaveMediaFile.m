@@ -13,8 +13,8 @@
 
     NSLog(@"Absolute path: %@", srcAbsolutePath);
 
-    if ([@"mov" caseInsensitiveCompare:fileEXT] == NSOrderedSame ||
-        [@"mp4" caseInsensitiveCompare:fileEXT] == NSOrderedSame) {
+    NSArray *videoType = @[ @"mp4", @"m4v" ];
+    if ([videoType containsObject: fileEXT]) {
       if ( !UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(srcAbsolutePath)) {
         NSLog(@"Video not compatiable");
         CDVPluginResult* result = [CDVPluginResult resultWithStatus: CDVCommandStatus_ERROR messageAsString:@"Video not compatible"];
