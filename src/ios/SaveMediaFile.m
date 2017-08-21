@@ -38,7 +38,7 @@
   // Was there an error?
   if (error != NULL) {
     NSLog(@"SaveMediaFile, error: %@",error);
-    CDVPluginResult* result = [CDVPluginResult resultWithStatus: CDVCommandStatus_ERROR messageAsString:error.description];
+    CDVPluginResult* result = [CDVPluginResult resultWithStatus: CDVCommandStatus_ERROR messageAsString:error.localizedDescription];
     [self.commandDelegate sendPluginResult:result callbackId:self.callbackId];
   } else {
     // No errors
@@ -54,7 +54,7 @@
   // Was there an error?
   if (error != NULL) {
     NSLog(@"SaveMediaFile, error: %@",error);
-    CDVPluginResult* result = [CDVPluginResult resultWithStatus: CDVCommandStatus_ERROR messageAsString:error.description];
+    CDVPluginResult* result = [CDVPluginResult resultWithStatus: CDVCommandStatus_ERROR messageAsString:error.localizedDescription];
     [self.commandDelegate sendPluginResult:result callbackId:self.callbackId];
   } else {
     // No errors
