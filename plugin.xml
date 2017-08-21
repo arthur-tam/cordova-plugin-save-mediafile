@@ -1,7 +1,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="cordova-plugin-save-mediafile"
-        version="1.0.3">
+        version="1.0.4">
 
     <name>SaveMediaFile</name>
     <description>This plugin allows you to save a media file to the iOS Camera roll / Photo Library or Android Gallery.</description>

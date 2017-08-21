@@ -9,11 +9,11 @@
     self.callbackId = command.callbackId;
 
     NSString *srcAbsolutePath = [command.arguments objectAtIndex:0];
-    NSString *fileEXT = [srcAbsolutePath substringFromIndex: [srcAbsolutePath length] - 3];
+    NSString *fileEXT = [[srcAbsolutePath substringFromIndex: [srcAbsolutePath length] - 3] lowercaseString];;
 
     NSLog(@"Absolute path: %@", srcAbsolutePath);
 
-    NSArray *videoType = @[ @"mp4", @"m4v" ];
+    NSArray *videoType = @[ @"mp4", @"mov", @"m4v" ];
     if ([videoType containsObject: fileEXT]) {
       if ( !UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(srcAbsolutePath)) {
         NSLog(@"Video not compatiable");
